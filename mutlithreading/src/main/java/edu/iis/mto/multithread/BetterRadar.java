@@ -1,14 +1,14 @@
 package edu.iis.mto.multithread;
 
-import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executor;
 
 public class BetterRadar {
 
-    private final ExecutorService executor;
+    private final Executor executor;
     private final int rocketsCount;
     private final PatriotBattery battery;
 
-    public BetterRadar(PatriotBattery battery, int rocketsCount, ExecutorService executor) {
+    public BetterRadar(PatriotBattery battery, int rocketsCount, Executor executor) {
         this.executor = executor;
         this.rocketsCount = rocketsCount;
         this.battery = battery;
